@@ -1,0 +1,22 @@
+﻿<html>
+<head>
+<title>
+第一个Ajax程序
+</title>
+</head>
+<body>
+<script language="javascript" >
+var xmlHttp;
+xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+xmlHttp.onreadystatechange=function()
+{
+	if(xmlHttp.readyState==4)
+	{
+		alert("获取结果:"+xmlHttp.responseText);
+	}
+}
+xmlHttp.open("GET","15-1.xml",true);
+xmlHttp.send(null);
+</script>
+</body>
+</html>
